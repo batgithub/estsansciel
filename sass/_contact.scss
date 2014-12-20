@@ -1,0 +1,57 @@
+.contact{
+	background :url(img/ESC-photo1.jpg) center top;
+ 	@include background-size (cover);
+	
+	text-align: center;
+	h1{
+		color: $blanc !important;
+		margin-bottom: 3em !important;
+	}
+	h2 {
+		
+		margin-bottom: 1.5em;
+		color: $blanc;
+		@include single-text-shadow(1px, 2px, 2px, $color: rgba(#000,1));
+	}
+	a:hover {
+		color:$blanc !important;
+	}
+	
+	
+
+	.contact-follow {
+		
+		margin-top: 6em;
+		margin-bottom: 3em;
+
+		ul {
+			list-style: none ;
+		
+			a {
+				@include transition-duration($default-transition-duration);
+				color : $blanc;		
+			}
+
+			li {
+				display: inline;
+				padding: 1em 1em 1em 0.5em;
+				margin-right: 0.3em;
+			}
+			.youtube {
+				background-color: #cc181e ;
+				@include transition-duration($default-transition-duration);
+				&:hover {
+					@include transition-duration($default-transition-duration);
+					background-color: scale-lightness(#cc181e, 10)
+				}
+			}
+			.facebook{
+				background-color: #3b5999;
+				&:hover {
+					@include transition-duration($default-transition-duration);
+					background-color: scale-lightness(#3b5999, 10);
+				}
+			}	
+		}		
+	}
+}

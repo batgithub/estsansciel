@@ -1,0 +1,62 @@
+.representation{
+	h1 {
+		text-align: center;
+	}
+	.date {
+		margin-bottom: 1em;
+		.item-date {
+			width: 20%;
+
+			float: left;
+			background-color: $accent-color;
+			color : $blanc;
+			text-align: center;
+			
+			p {
+				margin : 0.1em 0;
+			}
+			.jour {
+				font-size: 3.2em;
+			}
+			.mois, .annee {
+				font-size: 1.6em;
+				line-height: 1em;
+				text-transform: uppercase;
+			}
+			
+		}
+		.item-info {
+			width: 80%;
+			float: right;
+			padding: 1.15em 1.5em ;
+			background-color: $blanc;
+			h2 {
+				margin: 0 !important;
+			}
+			p {
+				margin: 0;
+			}
+				margin: 0;
+			}
+		}
+	}
+
+@media screen and (max-width: 768px) {
+	.item-date {
+		.jour {
+			font-size: 2.6em !important;
+		}
+		.mois, .annee {
+			font-size: 1.4em !important;
+			line-height: 1em;
+			
+		}
+		
+	}
+	.item-info {
+		font-size: 1em !important;
+		h2 {
+			font-weight: bold;
+		}
+	}
+}

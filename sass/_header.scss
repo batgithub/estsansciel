@@ -1,0 +1,56 @@
+
+.header-float{
+
+	position: fixed !important;
+	top: 0;
+	bottom: inherit !important;
+	z-index:9;
+	
+	background-color: rgba($blanc , $opacity)!important;
+	@include transition-duration($header-transition-duration);
+	.menu {
+		padding : 8px 0.9375em !important;
+	}
+	.logo-menu {
+		padding-top: 6px !important;
+	}
+
+}
+
+.header {
+	position: relative;
+	background:$blanc;
+	width: 100%;
+	@include transition-duration($header-transition-duration);
+
+	.logo-menu {
+
+		float: left;
+		height: 30px;
+		padding-top: 12px;
+	}
+	.menu {
+
+		text-align: right;
+		padding : 15px 0.9375em;
+
+
+		@include transition-duration($default-transition-duration);
+
+			.menu-item{
+				@include transition-duration($default-transition-duration);
+
+				font-weight: 400;
+				margin-left: 10px;
+				letter-spacing: 1px;
+				color: $brand-color !important;
+				&:hover {
+					color: $accent-color !important;
+				}
+
+			}
+
+	}
+}
+
+

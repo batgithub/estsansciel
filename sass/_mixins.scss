@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    $Placeholder
+\*------------------------------------*/
+@mixin placeholder ($color : $clr-mixin-placeholder){
+	&::-webkit-input-placeholder {
+		color:$color;
+	}
+	&:-moz-placeholder {
+		color:$color;
+	}
+	&:-ms-input-placeholder {
+		color:$color;
+	}
+}
+
+/*------------------------------------*\
+    $selection
+\*------------------------------------*/
+// $prefixes ("-webkit-,"-moz-","");
+// @mixin selection($color, $background) {
+// 	@each $prefix in $prefixes {
+// 		::#{$prefix}selection{
+// 			color: $color;
+// 			background:$bacground;
+// 			text-shadow:none;
+// 		}
+// 	}
+// }

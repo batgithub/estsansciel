@@ -1,0 +1,56 @@
+.intro{
+	// @include background-image(radial-gradient(center, cover, $brand-color-clair, $brand-color));
+	background :url(img/bgd.jpg) center top ;
+  	@include background-size (cover);
+	text-align: center;
+	width: 100%;
+	display: table;
+	padding: 12em 0;
+
+	.intro-wrap {
+		display: table-cell;
+		vertical-align: middle;
+
+		.img-wrap{
+
+			width: 200px;
+
+		}
+
+		.subtitle-wrap{
+			h1{
+			font-size: 2em;
+			line-height: 2em;
+			margin: 0px !important;
+			text-transform: none;
+			font-weight: 300;
+			color: $brand-color;
+			letter-spacing: 1px;
+			}
+		}
+
+	}
+}
+.intro-creation {
+	@extend .intro;
+	background :url(img/ESC-photo2.jpg) center top ;
+  	@include background-size (cover);
+  	
+  	padding : 8em 0;
+  	.titre-wrap{
+		h1 {font-size:5em; 
+			margin: 0px !important;
+			font-weight:900;
+		}
+  	}
+
+}
+@media screen and (max-width: 960px) {
+	.intro {
+		padding: 4em 0  !important;
+	}
+	.intro .subtitle-wrap h1 {
+		font-size: 1.5em !important;
+		font-weight: 300 !important;
+	}
+}
