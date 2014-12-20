@@ -1,6 +1,6 @@
 .intro{
 	// @include background-image(radial-gradient(center, cover, $brand-color-clair, $brand-color));
-	background :url(img/bgd.jpg) center top ;
+	background :url(../img/bgd.jpg) center top ;
   	@include background-size (cover);
 	text-align: center;
 	width: 100%;
@@ -33,7 +33,7 @@
 }
 .intro-creation {
 	@extend .intro;
-	background :url(img/ESC-photo2.jpg) center top ;
+	background :url(../img/ESC-photo2.jpg) center top ;
   	@include background-size (cover);
   	
   	padding : 8em 0;

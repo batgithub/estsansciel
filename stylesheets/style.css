@@ -191,7 +191,7 @@ textarea {
 }
 /* line 1, ../sass/_intro.scss */
 .intro, .intro-creation {
-  background: url(img/bgd.jpg) center top;
+  background: url(../img/bgd.jpg) center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -223,7 +223,7 @@ textarea {
 
 /* line 34, ../sass/_intro.scss */
 .intro-creation {
-  background: url(img/ESC-photo2.jpg) center top;
+  background: url(../img/ESC-photo2.jpg) center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -522,7 +522,7 @@ textarea {
 }
 /* line 1, ../sass/_contact.scss */
 .contact {
-  background: url(img/ESC-photo1.jpg) center top;
+  background: url(../img/ESC-photo1.jpg) center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
