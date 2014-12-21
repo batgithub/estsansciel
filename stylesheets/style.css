@@ -11,24 +11,23 @@
 /*------------------------------------*\
     $selection
 \*------------------------------------*/
-/* line 31, ../sass/_base.scss */
+/* line 33, ../sass/_base.scss */
 body {
   background-color: #f4f4f4;
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   color: #2d2d2d;
   line-height: 2em;
   font-weight: 300;
 }
 
-/* line 42, ../sass/_base.scss */
+/* line 44, ../sass/_base.scss */
 body, ul, li, h1, h2, h3, h4, h5, h6, br {
   margin: 0;
   padding: 0;
-  font-size: 100%;
 }
 
-/* line 48, ../sass/_base.scss */
+/* line 50, ../sass/_base.scss */
 h1 {
   margin-bottom: 1em;
   font-size: 2em;
@@ -36,19 +35,19 @@ h1 {
   font-weight: 400;
 }
 
-/* line 55, ../sass/_base.scss */
+/* line 57, ../sass/_base.scss */
 .titre-clair {
   color: white;
   text-align: center;
 }
 
-/* line 59, ../sass/_base.scss */
+/* line 61, ../sass/_base.scss */
 .titre-sombre {
   color: #233667;
   text-align: center;
 }
 
-/* line 64, ../sass/_base.scss */
+/* line 66, ../sass/_base.scss */
 h2 {
   margin-bottom: 0.8em;
   color: #2d2d2d;
@@ -57,21 +56,32 @@ h2 {
   font-weight: 300;
 }
 
-/* line 72, ../sass/_base.scss */
+/* line 74, ../sass/_base.scss */
 a {
   text-decoration: none;
 }
-/* line 74, ../sass/_base.scss */
+/* line 76, ../sass/_base.scss */
 a:hover {
   color: #f5a623 !important;
 }
 
-/* line 79, ../sass/_base.scss */
-section {
-  padding: 4em 0;
+/* line 81, ../sass/_base.scss */
+ul {
+  margin-left: 15px;
 }
 
-/* line 83, ../sass/_base.scss */
+/* line 84, ../sass/_base.scss */
+li {
+  margin-left: 15px;
+  list-style: circle;
+}
+
+/* line 89, ../sass/_base.scss */
+section {
+  padding: 3em 0 0 0;
+}
+
+/* line 93, ../sass/_base.scss */
 .hidden {
   visibility: hidden;
 }
@@ -79,12 +89,12 @@ section {
 /*------------------------------------*\
     $Formulaire
 \*------------------------------------*/
-/* line 91, ../sass/_base.scss */
+/* line 101, ../sass/_base.scss */
 form {
   margin-bottom: 15px;
 }
 
-/* line 97, ../sass/_base.scss */
+/* line 107, ../sass/_base.scss */
 input, textarea, .btn {
   margin-bottom: 15px;
   width: 100%;
@@ -110,14 +120,14 @@ input:-ms-input-placeholder , textarea:-ms-input-placeholder , .btn:-ms-input-
   color: #2d2d2d;
 }
 
-/* line 114, ../sass/_base.scss */
+/* line 124, ../sass/_base.scss */
 textarea {
   min-height: 12em;
   max-width: 100%;
 }
 
 @media screen and (max-width: 500px) {
-  /* line 121, ../sass/_base.scss */
+  /* line 131, ../sass/_base.scss */
   input, textarea, .btn {
     margin-bottom: 8px;
     width: 100%;
@@ -125,13 +135,14 @@ textarea {
     line-height: 1em;
   }
 
-  /* line 129, ../sass/_base.scss */
+  /* line 139, ../sass/_base.scss */
   textarea {
     min-height: 3.5em;
     max-width: 100%;
   }
 }
-/* line 140, ../sass/_base.scss */
+/* Bouton */
+/* line 150, ../sass/_base.scss */
 .btn {
   display: inline-block;
   border: none;
@@ -144,7 +155,7 @@ textarea {
   -o-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 153, ../sass/_base.scss */
+/* line 163, ../sass/_base.scss */
 .btn:hover {
   -webkit-transition-duration: 300ms;
   -moz-transition-duration: 300ms;
@@ -153,7 +164,7 @@ textarea {
   background-color: #36539f;
 }
 
-/* line 160, ../sass/_base.scss */
+/* line 170, ../sass/_base.scss */
 .btn-primary {
   display: inline-block;
   background-color: #aa6d08;
@@ -165,7 +176,7 @@ textarea {
   -o-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 171, ../sass/_base.scss */
+/* line 181, ../sass/_base.scss */
 .btn-primary:hover {
   -webkit-transition-duration: 300ms;
   -moz-transition-duration: 300ms;
@@ -175,7 +186,7 @@ textarea {
   color: white !important;
 }
 
-/* line 180, ../sass/_base.scss */
+/* line 190, ../sass/_base.scss */
 .is-active {
   color: #f5a623 !important;
 }
@@ -184,7 +195,7 @@ textarea {
     $ Hiden
 \*------------------------------------*/
 @media screen and (max-width: 500px) {
-  /* line 188, ../sass/_base.scss */
+  /* line 198, ../sass/_base.scss */
   .small-hidden {
     display: none;
   }
@@ -228,7 +239,7 @@ textarea {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 8em 0;
+  padding: 8em 0 !important;
 }
 /* line 41, ../sass/_intro.scss */
 .intro-creation .titre-wrap h1 {
@@ -251,7 +262,7 @@ textarea {
 }
 /* line 1, ../sass/_compagnie.scss */
 .compagnie {
-  padding-top: 6em !important;
+  padding-top: 4em !important;
   z-index: 3;
 }
 /* line 4, ../sass/_compagnie.scss */
@@ -522,6 +533,7 @@ textarea {
 }
 /* line 1, ../sass/_contact.scss */
 .contact {
+  margin-top: 3em;
   background: url(../img/ESC-photo1.jpg) center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -529,31 +541,31 @@ textarea {
   background-size: cover;
   text-align: center;
 }
-/* line 6, ../sass/_contact.scss */
+/* line 7, ../sass/_contact.scss */
 .contact h1 {
   color: white !important;
   margin-bottom: 3em !important;
 }
-/* line 10, ../sass/_contact.scss */
+/* line 11, ../sass/_contact.scss */
 .contact h2 {
   margin-bottom: 1.5em;
   color: white;
   text-shadow: 1px 2px 2px black;
 }
-/* line 16, ../sass/_contact.scss */
+/* line 17, ../sass/_contact.scss */
 .contact a:hover {
   color: white !important;
 }
-/* line 22, ../sass/_contact.scss */
+/* line 23, ../sass/_contact.scss */
 .contact .contact-follow {
   margin-top: 6em;
   margin-bottom: 3em;
 }
-/* line 27, ../sass/_contact.scss */
+/* line 28, ../sass/_contact.scss */
 .contact .contact-follow ul {
   list-style: none;
 }
-/* line 30, ../sass/_contact.scss */
+/* line 31, ../sass/_contact.scss */
 .contact .contact-follow ul a {
   -webkit-transition-duration: 300ms;
   -moz-transition-duration: 300ms;
@@ -561,13 +573,13 @@ textarea {
   transition-duration: 300ms;
   color: white;
 }
-/* line 35, ../sass/_contact.scss */
+/* line 36, ../sass/_contact.scss */
 .contact .contact-follow ul li {
   display: inline;
   padding: 1em 1em 1em 0.5em;
   margin-right: 0.3em;
 }
-/* line 40, ../sass/_contact.scss */
+/* line 41, ../sass/_contact.scss */
 .contact .contact-follow ul .youtube {
   background-color: #cc181e;
   -webkit-transition-duration: 300ms;
@@ -575,7 +587,7 @@ textarea {
   -o-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 43, ../sass/_contact.scss */
+/* line 44, ../sass/_contact.scss */
 .contact .contact-follow ul .youtube:hover {
   -webkit-transition-duration: 300ms;
   -moz-transition-duration: 300ms;
@@ -583,11 +595,11 @@ textarea {
   transition-duration: 300ms;
   background-color: #e41c23;
 }
-/* line 48, ../sass/_contact.scss */
+/* line 49, ../sass/_contact.scss */
 .contact .contact-follow ul .facebook {
   background-color: #3b5999;
 }
-/* line 50, ../sass/_contact.scss */
+/* line 51, ../sass/_contact.scss */
 .contact .contact-follow ul .facebook:hover {
   -webkit-transition-duration: 300ms;
   -moz-transition-duration: 300ms;
@@ -721,4 +733,19 @@ footer .liens {
   right: 0;
   font-weight: bold;
   text-align: right;
+}
+
+/* line 1, ../sass/_presentPiece.scss */
+.present-piece section {
+  padding: 3em 0 0 0;
+}
+/* line 3, ../sass/_presentPiece.scss */
+.present-piece section h1 {
+  text-shadow: #2d2d2d 1px 1px 7px;
+}
+/* line 6, ../sass/_presentPiece.scss */
+.present-piece section .date {
+  color: white;
+  padding: 0 10px;
+  background-color: #f5a623;
 }

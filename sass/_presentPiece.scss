@@ -1,0 +1,12 @@
+.present-piece section{
+	padding : $padding-section-piece;
+	h1 {
+		@include text-shadow($gris-sombre 1px 1px 7px);
+	}
+	.date {
+		color: $blanc;
+		padding : 0 10px;
+		background-color: $accent-color;
+
+	}
+}

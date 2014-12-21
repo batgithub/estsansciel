@@ -36,7 +36,7 @@
 	background :url(../img/ESC-photo2.jpg) center top ;
   	@include background-size (cover);
   	
-  	padding : 8em 0;
+  	padding : 8em 0 !important;
   	.titre-wrap{
 		h1 {font-size:5em; 
 			margin: 0px !important;
