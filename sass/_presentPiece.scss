@@ -3,10 +3,21 @@
 	h1 {
 		@include text-shadow($gris-sombre 1px 1px 7px);
 	}
-	.date {
-		color: $blanc;
-		padding : 0 10px;
-		background-color: $accent-color;
+	.wrap-presentation-date{
+		margin-bottom: 1em;
+		.presentation-date {
+			line-height: 1.6em !important;
+			width: 135px;
+			color: $blanc;
+			padding : 0 1em;
+			background-color: $accent-color;
 
+		}
+		.presentation-lieu {
+			font-size: 1.2em;
+			padding : 0.1em 0.3em;
+			border-left: 2px solid $accent-color;
+			line-height: 1em !important;
+		}
 	}
 }

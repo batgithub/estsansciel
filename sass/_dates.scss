@@ -9,11 +9,12 @@
 
 			float: left;
 			background-color: $accent-color;
-			color : $blanc;
+			
 			text-align: center;
 			
 			p {
 				margin : 0.1em 0;
+				color : $blanc !important;
 			}
 			.jour {
 				font-size: 3.2em;
@@ -31,6 +32,7 @@
 			padding: 1.15em 1.5em ;
 			background-color: $blanc;
 			h2 {
+				font-size: 1.5em;
 				margin: 0 !important;
 			}
 			p {
@@ -54,9 +56,9 @@
 		
 	}
 	.item-info {
-		font-size: 1em !important;
 		h2 {
 			font-weight: bold;
+			font-size: 1em !important;
 		}
 	}
 }

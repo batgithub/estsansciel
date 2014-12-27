@@ -28,9 +28,13 @@ $header-transition-duration : 500ms;
 
 $opacity : 92/100;
 
-
+* {
+	@include box-sizing(border-box);
+	@include selection($gris-sombre, scale-lightness($accent-color,46));
+}
 
 body{
+
 	background-color: $gris-clair;
 
 	font-family: 'Lato', sans-serif;
@@ -41,6 +45,10 @@ body{
 
 
 }
+p {
+	font-size :1.2em;
+	color : $gris-sombre 
+}
 body,ul,li, h1,h2,h3,h4,h5,h6,br{
 	margin:0;
 	padding: 0;
@@ -49,7 +57,7 @@ body,ul,li, h1,h2,h3,h4,h5,h6,br{
 
 h1{
 	margin-bottom: 1em;
-	font-size: 2em;
+	font-size: 3em;
 	line-height: 1.2;
 	font-weight: 400;
 
@@ -66,7 +74,7 @@ h1{
 h2{
 	margin-bottom: 0.8em;
 	color: $gris-sombre;
-	font-size: 1.5em;
+	font-size: 2em;
 	line-height: 1.2;
 	font-weight: 300;
 }
@@ -92,6 +100,15 @@ section{
 
 .hidden {
 	visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 2.5em !important;
+	}
+	h2 {
+		font-size: 1.5em !important;
+	}
 }
 
 

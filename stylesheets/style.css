@@ -11,7 +11,39 @@
 /*------------------------------------*\
     $selection
 \*------------------------------------*/
-/* line 33, ../sass/_base.scss */
+/* line 31, ../sass/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 22, ../sass/_mixins.scss */
+*::-moz-selection {
+  color: #2d2d2d;
+  background: #facf88;
+}
+/* line 22, ../sass/_mixins.scss */
+*::-webkit-selection {
+  color: #2d2d2d;
+  background: #facf88;
+}
+/* line 22, ../sass/_mixins.scss */
+*::-o-selection {
+  color: #2d2d2d;
+  background: #facf88;
+}
+/* line 22, ../sass/_mixins.scss */
+*::-ms-selection {
+  color: #2d2d2d;
+  background: #facf88;
+}
+/* line 22, ../sass/_mixins.scss */
+*::selection {
+  color: #2d2d2d;
+  background: #facf88;
+}
+
+/* line 36, ../sass/_base.scss */
 body {
   background-color: #f4f4f4;
   font-family: 'Lato', sans-serif;
@@ -21,80 +53,97 @@ body {
   font-weight: 300;
 }
 
-/* line 44, ../sass/_base.scss */
+/* line 48, ../sass/_base.scss */
+p {
+  font-size: 1.2em;
+  color: #2d2d2d;
+}
+
+/* line 52, ../sass/_base.scss */
 body, ul, li, h1, h2, h3, h4, h5, h6, br {
   margin: 0;
   padding: 0;
 }
 
-/* line 50, ../sass/_base.scss */
+/* line 58, ../sass/_base.scss */
 h1 {
   margin-bottom: 1em;
-  font-size: 2em;
+  font-size: 3em;
   line-height: 1.2;
   font-weight: 400;
 }
 
-/* line 57, ../sass/_base.scss */
+/* line 65, ../sass/_base.scss */
 .titre-clair {
   color: white;
   text-align: center;
 }
 
-/* line 61, ../sass/_base.scss */
+/* line 69, ../sass/_base.scss */
 .titre-sombre {
   color: #233667;
   text-align: center;
 }
 
-/* line 66, ../sass/_base.scss */
+/* line 74, ../sass/_base.scss */
 h2 {
   margin-bottom: 0.8em;
   color: #2d2d2d;
-  font-size: 1.5em;
+  font-size: 2em;
   line-height: 1.2;
   font-weight: 300;
 }
 
-/* line 74, ../sass/_base.scss */
+/* line 82, ../sass/_base.scss */
 a {
   text-decoration: none;
 }
-/* line 76, ../sass/_base.scss */
+/* line 84, ../sass/_base.scss */
 a:hover {
   color: #f5a623 !important;
 }
 
-/* line 81, ../sass/_base.scss */
+/* line 89, ../sass/_base.scss */
 ul {
   margin-left: 15px;
 }
 
-/* line 84, ../sass/_base.scss */
+/* line 92, ../sass/_base.scss */
 li {
   margin-left: 15px;
   list-style: circle;
 }
 
-/* line 89, ../sass/_base.scss */
+/* line 97, ../sass/_base.scss */
 section {
   padding: 3em 0 0 0;
 }
 
-/* line 93, ../sass/_base.scss */
+/* line 101, ../sass/_base.scss */
 .hidden {
   visibility: hidden;
 }
 
+@media screen and (max-width: 768px) {
+  /* line 106, ../sass/_base.scss */
+  h1 {
+    font-size: 2.5em !important;
+  }
+
+  /* line 109, ../sass/_base.scss */
+  h2 {
+    font-size: 1.5em !important;
+  }
+}
 /*------------------------------------*\
     $Formulaire
 \*------------------------------------*/
-/* line 101, ../sass/_base.scss */
+/* line 118, ../sass/_base.scss */
 form {
   margin-bottom: 15px;
 }
 
-/* line 107, ../sass/_base.scss */
+/* line 124, ../sass/_base.scss */
 input, textarea, .btn {
   margin-bottom: 15px;
   width: 100%;
@@ -120,14 +169,14 @@ input:-ms-input-placeholder , textarea:-ms-input-placeholder , .btn:-ms-input-
   color: #2d2d2d;
 }
 
-/* line 124, ../sass/_base.scss */
+/* line 141, ../sass/_base.scss */
 textarea {
   min-height: 12em;
   max-width: 100%;
 }
 
 @media screen and (max-width: 500px) {
-  /* line 131, ../sass/_base.scss */
+  /* line 148, ../sass/_base.scss */
   input, textarea, .btn {
     margin-bottom: 8px;
     width: 100%;
@@ -135,14 +184,14 @@ textarea {
     line-height: 1em;
   }
 
-  /* line 139, ../sass/_base.scss */
+  /* line 156, ../sass/_base.scss */
   textarea {
     min-height: 3.5em;
     max-width: 100%;
   }
 }
 /* Bouton */
-/* line 150, ../sass/_base.scss */
+/* line 167, ../sass/_base.scss */
 .btn {
   display: inline-block;
   border: none;
@@ -155,7 +204,7 @@ textarea {
   -o-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 163, ../sass/_base.scss */
+/* line 180, ../sass/_base.scss */
 .btn:hover {
   -webkit-transition-duration: 300ms;
   -moz-transition-duration: 300ms;
@@ -164,7 +213,7 @@ textarea {
   background-color: #36539f;
 }
 
-/* line 170, ../sass/_base.scss */
+/* line 187, ../sass/_base.scss */
 .btn-primary {
   display: inline-block;
   background-color: #aa6d08;
@@ -176,7 +225,7 @@ textarea {
   -o-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 181, ../sass/_base.scss */
+/* line 198, ../sass/_base.scss */
 .btn-primary:hover {
   -webkit-transition-duration: 300ms;
   -moz-transition-duration: 300ms;
@@ -186,7 +235,7 @@ textarea {
   color: white !important;
 }
 
-/* line 190, ../sass/_base.scss */
+/* line 207, ../sass/_base.scss */
 .is-active {
   color: #f5a623 !important;
 }
@@ -195,7 +244,7 @@ textarea {
     $ Hiden
 \*------------------------------------*/
 @media screen and (max-width: 500px) {
-  /* line 198, ../sass/_base.scss */
+  /* line 215, ../sass/_base.scss */
   .small-hidden {
     display: none;
   }
@@ -223,7 +272,6 @@ textarea {
 }
 /* line 21, ../sass/_intro.scss */
 .intro .intro-wrap .subtitle-wrap h1, .intro-creation .intro-wrap .subtitle-wrap h1 {
-  font-size: 2em;
   line-height: 2em;
   margin: 0px !important;
   text-transform: none;
@@ -232,7 +280,7 @@ textarea {
   letter-spacing: 1px;
 }
 
-/* line 34, ../sass/_intro.scss */
+/* line 33, ../sass/_intro.scss */
 .intro-creation {
   background: url(../img/ESC-photo2.jpg) center top;
   -webkit-background-size: cover;
@@ -241,22 +289,20 @@ textarea {
   background-size: cover;
   padding: 8em 0 !important;
 }
-/* line 41, ../sass/_intro.scss */
+/* line 40, ../sass/_intro.scss */
 .intro-creation .titre-wrap h1 {
-  font-size: 5em;
   margin: 0px !important;
   font-weight: 900;
 }
 
 @media screen and (max-width: 960px) {
-  /* line 49, ../sass/_intro.scss */
+  /* line 48, ../sass/_intro.scss */
   .intro, .intro-creation {
     padding: 4em 0  !important;
   }
 
-  /* line 52, ../sass/_intro.scss */
+  /* line 51, ../sass/_intro.scss */
   .intro .subtitle-wrap h1, .intro-creation .subtitle-wrap h1 {
-    font-size: 1.5em !important;
     font-weight: 300 !important;
   }
 }
@@ -443,7 +489,7 @@ textarea {
 
 @media screen and (max-width: 768px) {
   /* line 67, ../sass/_creations.scss */
-  h2 {
+  .owl-item h2 {
     font-size: 1em !important;
   }
 
@@ -477,24 +523,24 @@ textarea {
   width: 20%;
   float: left;
   background-color: #f5a623;
-  color: white;
   text-align: center;
 }
 /* line 15, ../sass/_dates.scss */
 .representation .date .item-date p {
   margin: 0.1em 0;
+  color: white !important;
 }
-/* line 18, ../sass/_dates.scss */
+/* line 19, ../sass/_dates.scss */
 .representation .date .item-date .jour {
   font-size: 3.2em;
 }
-/* line 21, ../sass/_dates.scss */
+/* line 22, ../sass/_dates.scss */
 .representation .date .item-date .mois, .representation .date .item-date .annee {
   font-size: 1.6em;
   line-height: 1em;
   text-transform: uppercase;
 }
-/* line 28, ../sass/_dates.scss */
+/* line 29, ../sass/_dates.scss */
 .representation .date .item-info {
   width: 80%;
   float: right;
@@ -502,33 +548,31 @@ textarea {
   background-color: white;
   margin: 0;
 }
-/* line 33, ../sass/_dates.scss */
+/* line 34, ../sass/_dates.scss */
 .representation .date .item-info h2 {
+  font-size: 1.5em;
   margin: 0 !important;
 }
-/* line 36, ../sass/_dates.scss */
+/* line 38, ../sass/_dates.scss */
 .representation .date .item-info p {
   margin: 0;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 46, ../sass/_dates.scss */
+  /* line 48, ../sass/_dates.scss */
   .item-date .jour {
     font-size: 2.6em !important;
   }
-  /* line 49, ../sass/_dates.scss */
+  /* line 51, ../sass/_dates.scss */
   .item-date .mois, .item-date .annee {
     font-size: 1.4em !important;
     line-height: 1em;
   }
 
-  /* line 56, ../sass/_dates.scss */
-  .item-info {
-    font-size: 1em !important;
-  }
-  /* line 58, ../sass/_dates.scss */
+  /* line 59, ../sass/_dates.scss */
   .item-info h2 {
     font-weight: bold;
+    font-size: 1em !important;
   }
 }
 /* line 1, ../sass/_contact.scss */
@@ -564,8 +608,9 @@ textarea {
 /* line 28, ../sass/_contact.scss */
 .contact .contact-follow ul {
   list-style: none;
+  margin-left: 0px !important;
 }
-/* line 31, ../sass/_contact.scss */
+/* line 32, ../sass/_contact.scss */
 .contact .contact-follow ul a {
   -webkit-transition-duration: 300ms;
   -moz-transition-duration: 300ms;
@@ -573,13 +618,14 @@ textarea {
   transition-duration: 300ms;
   color: white;
 }
-/* line 36, ../sass/_contact.scss */
+/* line 37, ../sass/_contact.scss */
 .contact .contact-follow ul li {
   display: inline;
   padding: 1em 1em 1em 0.5em;
   margin-right: 0.3em;
+  margin-left: 0px !important;
 }
-/* line 41, ../sass/_contact.scss */
+/* line 43, ../sass/_contact.scss */
 .contact .contact-follow ul .youtube {
   background-color: #cc181e;
   -webkit-transition-duration: 300ms;
@@ -587,7 +633,7 @@ textarea {
   -o-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 44, ../sass/_contact.scss */
+/* line 46, ../sass/_contact.scss */
 .contact .contact-follow ul .youtube:hover {
   -webkit-transition-duration: 300ms;
   -moz-transition-duration: 300ms;
@@ -595,11 +641,11 @@ textarea {
   transition-duration: 300ms;
   background-color: #e41c23;
 }
-/* line 49, ../sass/_contact.scss */
+/* line 51, ../sass/_contact.scss */
 .contact .contact-follow ul .facebook {
   background-color: #3b5999;
 }
-/* line 51, ../sass/_contact.scss */
+/* line 53, ../sass/_contact.scss */
 .contact .contact-follow ul .facebook:hover {
   -webkit-transition-duration: 300ms;
   -moz-transition-duration: 300ms;
@@ -618,7 +664,7 @@ footer .copyright {
 }
 /* line 6, ../sass/_footer.scss */
 footer .liens {
-  padding-top: 1em;
+  padding-top: 1.3em;
 }
 
 @media screen and (max-width: 960px) {
@@ -744,8 +790,21 @@ footer .liens {
   text-shadow: #2d2d2d 1px 1px 7px;
 }
 /* line 6, ../sass/_presentPiece.scss */
-.present-piece section .date {
+.present-piece section .wrap-presentation-date {
+  margin-bottom: 1em;
+}
+/* line 8, ../sass/_presentPiece.scss */
+.present-piece section .wrap-presentation-date .presentation-date {
+  line-height: 1.6em !important;
+  width: 135px;
   color: white;
-  padding: 0 10px;
+  padding: 0 1em;
   background-color: #f5a623;
+}
+/* line 16, ../sass/_presentPiece.scss */
+.present-piece section .wrap-presentation-date .presentation-lieu {
+  font-size: 1.2em;
+  padding: 0.1em 0.3em;
+  border-left: 2px solid #f5a623;
+  line-height: 1em !important;
 }
