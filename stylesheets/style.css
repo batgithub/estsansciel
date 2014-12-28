@@ -55,7 +55,7 @@ body {
 
 /* line 48, ../sass/_base.scss */
 p {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #2d2d2d;
 }
 
@@ -518,29 +518,29 @@ textarea {
 .representation .date {
   margin-bottom: 1em;
 }
-/* line 7, ../sass/_dates.scss */
+/* line 8, ../sass/_dates.scss */
 .representation .date .item-date {
   width: 20%;
   float: left;
   background-color: #f5a623;
   text-align: center;
 }
-/* line 15, ../sass/_dates.scss */
+/* line 16, ../sass/_dates.scss */
 .representation .date .item-date p {
   margin: 0.1em 0;
   color: white !important;
 }
-/* line 19, ../sass/_dates.scss */
+/* line 20, ../sass/_dates.scss */
 .representation .date .item-date .jour {
   font-size: 3.2em;
 }
-/* line 22, ../sass/_dates.scss */
+/* line 23, ../sass/_dates.scss */
 .representation .date .item-date .mois, .representation .date .item-date .annee {
   font-size: 1.6em;
   line-height: 1em;
   text-transform: uppercase;
 }
-/* line 29, ../sass/_dates.scss */
+/* line 30, ../sass/_dates.scss */
 .representation .date .item-info {
   width: 80%;
   float: right;
@@ -548,28 +548,57 @@ textarea {
   background-color: white;
   margin: 0;
 }
-/* line 34, ../sass/_dates.scss */
+/* line 35, ../sass/_dates.scss */
 .representation .date .item-info h2 {
   font-size: 1.5em;
   margin: 0 !important;
 }
-/* line 38, ../sass/_dates.scss */
+/* line 39, ../sass/_dates.scss */
 .representation .date .item-info p {
   margin: 0;
 }
 
+/* line 45, ../sass/_dates.scss */
+.date-wrap:hover {
+  -webkit-transform: translateX(2%);
+  -moz-transform: translateX(2%);
+  -ms-transform: translateX(2%);
+  -o-transform: translateX(2%);
+  transform: translateX(2%);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 49, ../sass/_dates.scss */
+.date-wrap {
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
 @media screen and (max-width: 768px) {
-  /* line 48, ../sass/_dates.scss */
+  /* line 56, ../sass/_dates.scss */
   .item-date .jour {
     font-size: 2.6em !important;
   }
-  /* line 51, ../sass/_dates.scss */
+  /* line 59, ../sass/_dates.scss */
   .item-date .mois, .item-date .annee {
     font-size: 1.4em !important;
     line-height: 1em;
   }
 
-  /* line 59, ../sass/_dates.scss */
+  /* line 67, ../sass/_dates.scss */
   .item-info h2 {
     font-weight: bold;
     font-size: 1em !important;
