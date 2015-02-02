@@ -1,7 +1,8 @@
 .present-piece section{
 	padding : $padding-section-piece;
-	h1 {
+	.titre-wrap h1 {
 		@include text-shadow($gris-sombre 1px 1px 7px);
+		text-align: left;
 	}
 	.wrap-presentation-date{
 		margin-bottom: 1em;

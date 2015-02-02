@@ -1,24 +1,16 @@
 .contact{
 	margin-top : 3em;
-	background :url(../img/ESC-photo1.jpg) center top;
+	background :url(../img/Garmoutias2.jpg) center top -30px;
  	@include background-size (cover);
+
 	
 	text-align: center;
-	h1{
-		color: $blanc !important;
-		margin-bottom: 3em !important;
-	}
+	h1,h2 {color:$blanc;}
 	h2 {
-		
 		margin-bottom: 1.5em;
-		color: $blanc;
 		@include single-text-shadow(1px, 2px, 2px, $color: rgba(#000,1));
 	}
-	a:hover {
-		color:$blanc !important;
-	}
-	
-	
+
 
 	.contact-follow {
 		
@@ -31,8 +23,10 @@
 		
 			a {
 				@include transition-duration($default-transition-duration);
-				color : $blanc;		
+				color : $blanc;	
+				&:hover {color:$blanc !important;}	
 			}
+
 
 			li {
 				display: inline;

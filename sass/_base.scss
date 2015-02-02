@@ -2,7 +2,8 @@
 $brand-color : #233667; //bleu
 $brand-color-clair : scale-lightness($brand-color, 42); //bleu clair
 $accent-color : #F5A623; //jaune
-$gris-sombre : #2d2d2d;
+$noir : #151515;
+$gris-sombre : #464646;
 $gris-clair : scale-lightness($gris-sombre, 95);
 $blanc : white;
 
@@ -46,7 +47,7 @@ body{
 
 }
 p {
-	font-size :1em;
+	font-size :1.2em;
 	color : $gris-sombre 
 }
 body,ul,li, h1,h2,h3,h4,h5,h6,br{
@@ -60,16 +61,11 @@ h1{
 	font-size: 3em;
 	line-height: 1.2;
 	font-weight: 400;
+	text-align: center;
 
 }
-.titre-clair {
-	color: $blanc;
-	text-align: center;
-}
-.titre-sombre {
-	color: $brand-color;
-	text-align: center;
-}
+.titre-clair { @extend h1;	color: $blanc;}
+.titre-sombre {	@extend h1;color: $brand-color;}
 
 h2{
 	margin-bottom: 0.8em;
@@ -150,6 +146,7 @@ textarea {
 		width: 100% ;
 		padding: 0.5em 1em;
 		line-height: 1em;
+
 
 
 	}

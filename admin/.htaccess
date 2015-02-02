@@ -1,0 +1,4 @@
+AuthName "Page d'administration protégée"
+2AuthType Basic
+3AuthUserFile "/baptistelhopitault/admin/.htpasswd"
+4Require valid-user
