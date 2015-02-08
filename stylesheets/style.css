@@ -213,7 +213,26 @@ textarea {
 }
 
 /* line 184, ../sass/_base.scss */
-.btn-primary {
+.btn-light {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 1px solid white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+  color: white;
+}
+/* line 194, ../sass/_base.scss */
+.btn-light:hover {
+  border: 2px solid white;
+  color: white !important;
+}
+
+/* line 200, ../sass/_base.scss */
+.btn-footer {
   display: inline-block;
   background-color: #aa6d08;
   padding: 0em 0.5em;
@@ -224,8 +243,8 @@ textarea {
   -o-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 195, ../sass/_base.scss */
-.btn-primary:hover {
+/* line 211, ../sass/_base.scss */
+.btn-footer:hover {
   -webkit-transition-duration: 300ms;
   -moz-transition-duration: 300ms;
   -o-transition-duration: 300ms;
@@ -234,7 +253,7 @@ textarea {
   color: white !important;
 }
 
-/* line 204, ../sass/_base.scss */
+/* line 219, ../sass/_base.scss */
 .is-active {
   color: #f5a623 !important;
 }
@@ -243,7 +262,7 @@ textarea {
     $ Hiden
 \*------------------------------------*/
 @media screen and (max-width: 500px) {
-  /* line 212, ../sass/_base.scss */
+  /* line 227, ../sass/_base.scss */
   .small-hidden {
     display: none;
   }
@@ -402,6 +421,15 @@ textarea {
 /* line 1, ../sass/_creations.scss */
 .creations {
   background-color: #233667;
+}
+/* line 4, ../sass/_creations.scss */
+.creations .creation-carousel-item {
+  margin: 0 5px 10px 5px;
+  text-align: center;
+}
+/* line 8, ../sass/_creations.scss */
+.creations .creation-carousel-item .affiche {
+  margin-bottom: 20px;
 }
 
 /* line 2, ../sass/_dates.scss */

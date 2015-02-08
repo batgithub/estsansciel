@@ -181,7 +181,23 @@ textarea {
 	}
 }
 
-.btn-primary {
+.btn-light {
+	margin-top: 10px;
+	padding:5px 10px;
+
+	border: 1px solid $blanc;
+	@include border-radius(5px);
+	
+	font-size: 1em;
+	color:$blanc;
+
+	&:hover {
+		border: 2px solid $blanc;
+		color: $blanc !important;		
+	}
+}
+
+.btn-footer {
 
 	display:inline-block;
 	background-color: darken($accent-color, 20);
@@ -198,7 +214,6 @@ textarea {
 		color:$blanc !important;
 
 	}
-
 }
 
 .is-active{
