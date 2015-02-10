@@ -1,12 +1,11 @@
-.creations {
-	background-color:$brand-color; 
+.creations {background-color:$brand-color;}
 	
-	.creation-carousel-item {
-		margin: 0 5px 10px 5px;
-		text-align: center;
+.creation-carousel-item {
+	margin: 0 5px 0 5px;
+	text-align: center;
+	overflow: hidden;
 
-		.affiche {
-			margin-bottom: 20px;
-		}
+	.affiche {
+		margin-bottom: 20px;
 	}
 }
