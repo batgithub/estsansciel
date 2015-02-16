@@ -330,19 +330,18 @@ textarea {
 }
 /* line 4, ../sass/_compagnie.scss */
 .compagnie .present {
-  text-align: center;
   padding-bottom: 2em;
 }
-/* line 8, ../sass/_compagnie.scss */
+/* line 7, ../sass/_compagnie.scss */
 .compagnie .present-generale {
   margin-bottom: 15px !important;
 }
 
-/* line 12, ../sass/_compagnie.scss */
+/* line 11, ../sass/_compagnie.scss */
 .video {
   padding-right: -1em !important;
 }
-/* line 16, ../sass/_compagnie.scss */
+/* line 15, ../sass/_compagnie.scss */
 .video .videoWrapper {
   margin-bottom: 15px;
   position: relative;
@@ -351,7 +350,7 @@ textarea {
   /* 16:9 */
   height: 0;
 }
-/* line 23, ../sass/_compagnie.scss */
+/* line 22, ../sass/_compagnie.scss */
 .video .videoWrapper iframe {
   position: absolute;
   top: 0;
@@ -359,7 +358,7 @@ textarea {
   width: 100%;
   height: 100%;
 }
-/* line 31, ../sass/_compagnie.scss */
+/* line 30, ../sass/_compagnie.scss */
 .video .chronologie {
   margin-top: 2em;
 }
