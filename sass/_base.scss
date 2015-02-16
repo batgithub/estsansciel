@@ -62,10 +62,32 @@ h1{
 	line-height: 1.2;
 	font-weight: 400;
 	text-align: center;
+	&::after {
+		position : relative;
+		display: block;
+		left : 50%;
+		margin: 20px 0 0 -100px;
+
+		height: 2px;
+		width: 200px;
+		content:"";
+	}
+	
 
 }
-.titre-clair { @extend h1;	color: $blanc;}
-.titre-sombre {	@extend h1;color: $brand-color;}
+.titre-clair { 
+	color: $blanc;
+	&::after {
+		background-color:$blanc;		
+	}
+
+}
+.titre-sombre {	
+	color: $brand-color;
+	&::after {
+		background-color:$brand-color;
+	}
+}
 
 h2{
 	margin-bottom: 0.8em;
