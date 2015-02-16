@@ -4,17 +4,17 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-        <title>Compagnie Est Sans Ciel</title>
-
+        <meta name="keywords" content="théâtre, toulouse, amateur" />
         <meta name="description" content="La Compagnie Est sans Ciel c'est le projet un peu fou d'une poignée d'étudiants passionnés de Théâtre. Des comédiens amateurs qui n'ont rien à envier à leurs congénères professionnels. Avec ses créations originales, la Compagnie Est sans Ciel foule les planches toulousaines depuis plus de 3 ans" />
 
-        <meta name="keywords" content="théâtre, toulouse, amateur" />
+        <title>Compagnie Est Sans Ciel</title>
 
         <link rel="icon" type="image/png" href="img/favico.png" />
         <link rel="stylesheet" href="stylesheets/style.css">
         <link rel="stylesheet" href="stylesheets/foundation.css">
-        <link rel="stylesheet" href="stylesheets/owl.carousel.css">
+       
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700,300italic,' rel='stylesheet' type='text/css'>
         <!--[if lt IE 9]>
@@ -77,48 +77,43 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> <!-- compagnie -->
 
                     <!--
                             Les créations de la compagnie
                                     -->
                     <section class="creations ">
-                      <div class="creations-wrap row">
-                        <div class="small-12 columns">
-                          <a name="creations"></a><h1 class="titre-clair">Nos créations</h1>
-                        </div>
-                      </div>
 
-                      <div class="row">
-                        <div class="small-12 columns carousel">
-                          <a href="piece1.html">
-                              <div class="item">
-                                <img src="img/affiche/souliers.jpg"  alt="la cabane en coussin">                           <h2>Les souliers dorés</h2>
-                              </div>
-                          </a>
-                          <a href="piece1.html">
-                              <div class="item">
-                                <img src="img/affiche/souliers.jpg"  alt="la cabane en coussin">                           <h2>Les souliers dorés</h2>
-                              </div>
-                          </a>
-                          <a href="piece1.html">
-                              <div class="item">
-                                <img src="img/affiche/souliers.jpg"  alt="la cabane en coussin">                           <h2>Les souliers dorés</h2>
-                              </div>
-                          </a>
-                          <a href="piece1.html">
-                              <div class="item">
-                                <img src="img/affiche/souliers.jpg"  alt="la cabane en coussin">                           <h2>Les souliers dorés</h2>
-                              </div>
-                          </a>
-                          <a href="piece1.html">
-                              <div class="item">
-                                <img src="img/affiche/souliers.jpg"  alt="la cabane en coussin">                           <h2>Les souliers dorés</h2>
-                              </div>
-                          </a>
-                        </div>
-                       </div>
-                    </section>
+                        <div class="creations-title row">
+                            <div class="small-12 columns">
+                                <a name="creations"></a>
+                                <h1 class="titre-clair">Nos créations</h1>
+                            </div>
+                        </div> <!-- creations-title -->
+
+                        <div class="creations-content row">
+                            <div class="small-12 columns creations-carousel">
+                                
+                                <div href="piece1.html"class="creation-carousel-item">
+                                    <img src="img/affiche/fautquejetedise.png"  alt="la cabane en coussin" class="affiche"> 
+                                    <a href="piece1.html" class="btn-light">Plus d'infos</a>  
+                                </div>
+                                <div href="piece1.html"class="creation-carousel-item">
+                                    <img src="img/affiche/garmoutias.png"  alt="la cabane en coussin" class="affiche"> 
+                                    <a href="piece1.html" class="btn-light">Plus d'infos</a>  
+                                </div>
+                                <div href="piece1.html"class="creation-carousel-item">
+                                    <img src="img/affiche/souliers.png"  alt="la cabane en coussin" class="affiche"> 
+                                    <a href="piece1.html" class="btn-light">Plus d'infos</a>  
+                                </div>
+                                <div href="piece1.html"class="creation-carousel-item">
+                                    <img src="img/affiche/cabane.png"  alt="la cabane en coussin" class="affiche"> 
+                                    <a href="piece1.html" class="btn-light">Plus d'infos</a>  
+                                </div>
+                                
+                            </div> <!-- creations-carousel -->
+                        </div> <!-- creations-content -->
+                    </section> <!-- creations -->
 
                     <!--
                             Toutes les dates de représentation
@@ -204,7 +199,7 @@
                             </div>
                             </a>
                         </div>
-                    </section>
+                    </section> <!-- representation-->
 
                     <!--
                             S'inscrire à la newsletter et réseaux sociaux
@@ -235,9 +230,12 @@
                                 </ul>
                             </div>
                         </div>
-                    </section>
+                    </section><!-- contact -->
 
-
+                    
+                    <!--
+                            Modals box
+                                    -->
                     <div class="md-modal md-effect-3 row" id="modal-1">
                         <div class="md-content small-11 small-centered medium-9 large-8 columns">
                             <div class="modal-header row">
@@ -290,7 +288,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="md-modal md-effect-3" id="modal-3">
                         <div class="md-content small-11 small-centered  columns">
                             <div class="modal-header row">
@@ -315,11 +312,11 @@
                         <div class="footer-wrap row">
                             <div class="liens small-12 medium-6 columns">
 
-                                <a class="md-trigger btn-primary" data-modal="modal-3">Médias</a>
+                                <a class="md-trigger btn-footer" data-modal="modal-3">Médias</a>
 
-                                <a class="md-trigger btn-primary" data-modal="modal-1">Contact</a>
+                                <a class="md-trigger btn-footer" data-modal="modal-1">Contact</a>
 
-                                <a class="md-trigger btn-primary" data-modal="modal-2">Mentions légales</a>
+                                <a class="md-trigger btn-footer" data-modal="modal-2">Mentions légales</a>
                              </div>
 
                             <div class="copyright small-12 medium-6 columns">
@@ -332,41 +329,20 @@
             </div><!--  site-pusher    -->
          </div> <!--  site-container    -->
          <!-- <div class="site-cache" id="site-cache"></div> -->
+
+
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        
+        <!--Modal box-->
+        <script src="js/classie.js"></script>
+        <script src="js/modalEffects.js"></script>
+        
+        <script src="js/app.js"></script>
+
+        <!-- for the blur effect -->
+        <script>var polyfilter_scriptpath = '/js/';  // this is important for IEs</script>
+
     </body>
-
-
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/app.js"></script>
-
-    <!--
-            Modal box
-                    -->
-    <!-- classie.js by @desandro: https://github.com/desandro/classie -->
-    <script src="js/classie.js"></script>
-    <script src="js/modalEffects.js"></script>
-
-    <!-- for the blur effect -->
-    <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
-    <script>
-        // this is important for IEs
-        var polyfilter_scriptpath = '/js/';
-    </script>
-
-
-
-    <!--
-            Verification du navigateur de l'utilisateur
-                    -->
-    <script type="text/javascript">
-        var $buoop = {};
-        $buoop.ol = window.onload;
-        window.onload=function(){
-        try {if ($buoop.ol) $buoop.ol();}catch (e) {}
-        var e = document.createElement("script");
-        e.setAttribute("type", "text/javascript");
-        e.setAttribute("src", "//browser-update.org/update.js");
-        document.body.appendChild(e);
-        }
-    </script>
 </html>

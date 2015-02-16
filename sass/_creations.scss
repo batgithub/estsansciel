@@ -1,84 +1,11 @@
-.creations {
+.creations {background-color:$brand-color;}
+	
+.creation-carousel-item {
+	margin: 0 5px 0 5px;
+	text-align: center;
+	overflow: hidden;
 
-	background-color: $brand-color;
-
-	.carousel {
-
-		.owl-item {
-			background-color: $blanc;
-
-			h2 {
-				margin-top: 0.7em;
-				text-align: center;
-				color: $gris-sombre;
-				font-size: 1em;
-			}
-		}
-		.owl-controls {
-			float: right;
-			margin: 1em 0 2em 0;
-			.owl-dots {
-
-				float: left;
-				.owl-dot {
-					display: inline-block;
-					width: 7px;
-					height: 7px;
-					margin-right: 0.6em;
-
-					@include border-radius($rond);
-					border : 1px solid $blanc;
-
-				}
-				.active {
-						background-color: $blanc !important;
-					}
-			}
-			.owl-nav {
-				text-align: right;
-				float: right;
-				div {
-					display: inline-block;
-					padding: 0em 0.3em;
-
-					border: 1px solid $blanc;
-					@include border-radius(7px);
-
-					color: $blanc;
-					font-size: 1.3em;
-					line-height: 1.3em;
-					@include transition-duration($default-transition-duration);
-
-					&:hover {
-						background-color: $blanc;
-						color: $brand-color;
-						@include transition-duration($default-transition-duration);
-					}
-				}
-				.owl-next {
-					margin-left: 0.3em;
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.owl-item h2 {
-		font-size: 1em !important;
-	}
-	.owl-controls {
-		margin: 0 0 1em 0 !important;
-		float: none !important;
-		text-align: center;
-		.owl-dots {
-			float: none !important;
-		}
-		.owl-nav {
-			display: none;
-			float: none !important;
-			height: 0px !important;
-		}
-
+	.affiche {
+		margin-bottom: 20px;
 	}
 }
