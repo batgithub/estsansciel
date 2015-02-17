@@ -121,33 +121,43 @@ a:hover {
 }
 
 /* line 108, ../sass/_base.scss */
+a.dark-link {
+  color: #464646 !important;
+  transition-duration: 300ms;
+}
+/* line 111, ../sass/_base.scss */
+a.dark-link:hover {
+  color: #151515 !important;
+}
+
+/* line 116, ../sass/_base.scss */
 ul {
   margin-left: 15px;
 }
 
-/* line 111, ../sass/_base.scss */
+/* line 119, ../sass/_base.scss */
 li {
   margin-left: 15px;
   list-style: circle;
 }
 
-/* line 116, ../sass/_base.scss */
+/* line 124, ../sass/_base.scss */
 section {
-  padding: 3em 0 0 0;
+  padding: 3em 0 3em 0;
 }
 
-/* line 120, ../sass/_base.scss */
+/* line 128, ../sass/_base.scss */
 .hidden {
   visibility: hidden;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 125, ../sass/_base.scss */
+  /* line 133, ../sass/_base.scss */
   h1 {
     font-size: 2.5em !important;
   }
 
-  /* line 128, ../sass/_base.scss */
+  /* line 136, ../sass/_base.scss */
   h2 {
     font-size: 1.5em !important;
   }
@@ -155,12 +165,12 @@ section {
 /*------------------------------------*\
     $Formulaire
 \*------------------------------------*/
-/* line 137, ../sass/_base.scss */
+/* line 145, ../sass/_base.scss */
 form {
   margin-bottom: 15px;
 }
 
-/* line 143, ../sass/_base.scss */
+/* line 151, ../sass/_base.scss */
 input, textarea, .btn {
   margin-bottom: 15px;
   width: 100%;
@@ -186,14 +196,14 @@ input:-ms-input-placeholder , textarea:-ms-input-placeholder , .btn:-ms-input-
   color: #464646;
 }
 
-/* line 160, ../sass/_base.scss */
+/* line 168, ../sass/_base.scss */
 textarea {
   min-height: 12em;
   max-width: 100%;
 }
 
 @media screen and (max-width: 500px) {
-  /* line 167, ../sass/_base.scss */
+  /* line 175, ../sass/_base.scss */
   input, textarea, .btn {
     margin-bottom: 8px;
     width: 100%;
@@ -201,14 +211,14 @@ textarea {
     line-height: 1em;
   }
 
-  /* line 176, ../sass/_base.scss */
+  /* line 184, ../sass/_base.scss */
   textarea {
     min-height: 3.5em;
     max-width: 100%;
   }
 }
 /* Bouton */
-/* line 187, ../sass/_base.scss */
+/* line 195, ../sass/_base.scss */
 .btn {
   display: inline-block;
   border: none;
@@ -221,7 +231,7 @@ textarea {
   -o-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 200, ../sass/_base.scss */
+/* line 208, ../sass/_base.scss */
 .btn:hover {
   -webkit-transition-duration: 300ms;
   -moz-transition-duration: 300ms;
@@ -230,7 +240,7 @@ textarea {
   background-color: #36539f;
 }
 
-/* line 207, ../sass/_base.scss */
+/* line 215, ../sass/_base.scss */
 .btn-light {
   margin-top: 10px;
   padding: 5px 10px;
@@ -247,7 +257,7 @@ textarea {
   -o-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 220, ../sass/_base.scss */
+/* line 228, ../sass/_base.scss */
 .btn-light:hover {
   border: 1px solid white;
   color: white !important;
@@ -257,7 +267,7 @@ textarea {
   transition-duration: 300ms;
 }
 
-/* line 228, ../sass/_base.scss */
+/* line 236, ../sass/_base.scss */
 .btn-footer {
   display: inline-block;
   background-color: #aa6d08;
@@ -269,7 +279,7 @@ textarea {
   -o-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 239, ../sass/_base.scss */
+/* line 247, ../sass/_base.scss */
 .btn-footer:hover {
   -webkit-transition-duration: 300ms;
   -moz-transition-duration: 300ms;
@@ -279,7 +289,7 @@ textarea {
   color: white !important;
 }
 
-/* line 247, ../sass/_base.scss */
+/* line 255, ../sass/_base.scss */
 .is-active {
   color: #f5a623 !important;
 }
@@ -288,7 +298,7 @@ textarea {
     $ Hiden
 \*------------------------------------*/
 @media screen and (max-width: 500px) {
-  /* line 255, ../sass/_base.scss */
+  /* line 263, ../sass/_base.scss */
   .small-hidden {
     display: none;
   }
@@ -555,7 +565,6 @@ textarea {
 }
 /* line 1, ../sass/_contact.scss */
 .contact {
-  margin-top: 3em;
   background: url(../img/chaise.jpg) center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -563,14 +572,14 @@ textarea {
   background-size: cover;
   text-align: center;
 }
-/* line 8, ../sass/_contact.scss */
+/* line 7, ../sass/_contact.scss */
 .contact h1, .contact h2 {
-  color: white;
-}
-/* line 9, ../sass/_contact.scss */
-.contact h2 {
-  margin-bottom: 1.5em;
   text-shadow: 1px 2px 2px black;
+}
+/* line 8, ../sass/_contact.scss */
+.contact h2 {
+  color: white;
+  margin-bottom: 1.5em;
 }
 /* line 15, ../sass/_contact.scss */
 .contact .contact-follow {
@@ -640,12 +649,11 @@ footer .copyright {
 }
 /* line 5, ../sass/_footer.scss */
 footer .copyright p {
-  color: #151515;
   font-size: 1em;
 }
 /* line 7, ../sass/_footer.scss */
-footer .liens {
-  padding-top: 1.3em;
+footer .liens p {
+  font-size: 1em;
 }
 
 @media screen and (max-width: 960px) {

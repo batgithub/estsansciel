@@ -2,11 +2,11 @@ footer {
 	background-color: $accent-color;
 	.copyright {
 		text-align: right;
-		p{color:$noir; font-size:1em;}
+		p{font-size:1em;}
 	}
-	.liens {
-		padding-top: 1.3em;
+	.liens p{
 		
+		font-size:1em;
 	}
 	
 }
