@@ -13,7 +13,7 @@ $rond: 25px;
 $padding-intro : 25% 0;
 
 $padding-dates : 10px;
-$padding-section : 3em 0 0 0;
+$padding-section : 3em 0 3em 0;
 $padding-section-piece : 3em 0 0 0;
 
 $line-height-header: 1em;
@@ -62,10 +62,33 @@ h1{
 	line-height: 1.2;
 	font-weight: 400;
 	text-align: center;
+	&::after {
+		position : relative;
+		display: block;
+		left : 50%;
+		margin: 20px 0 0 -100px;
+
+		height: 2px;
+		width: 200px;
+		content:"";
+	}
+	
 
 }
-.titre-clair { @extend h1;	color: $blanc;}
-.titre-sombre {	@extend h1;color: $brand-color;}
+.titre-clair { 
+	color: $blanc;
+	&::after {
+		background-color:$blanc;		
+	}
+
+}
+.titre-sombre {	
+	color: $brand-color;
+	&::after {
+		background-color:$brand-color;
+	}
+}
+
 
 h2{
 	margin-bottom: 0.8em;
@@ -80,7 +103,15 @@ a{
  	&:hover {
 		color: $accent-color !important;
 	}
+
 }
+a.dark-link {
+	color: $gris-sombre !important;
+	transition-duration:$default-transition-duration;
+		&:hover {
+			color: $noir !important;
+		}
+	}
 
 ul {
 	margin-left : $gutter;

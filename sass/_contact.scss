@@ -1,14 +1,14 @@
 .contact{
-	margin-top : 3em;
-	background :url(../img/Garmoutias2.jpg) center top -30px;
+	background :url(../img/chaise.jpg) center ;
  	@include background-size (cover);
 
 	
 	text-align: center;
-	h1,h2 {color:$blanc;}
+	h1,h2 {@include single-text-shadow(1px, 2px, 2px, $color: rgba(#000,1));}
 	h2 {
+		color:$blanc;
 		margin-bottom: 1.5em;
-		@include single-text-shadow(1px, 2px, 2px, $color: rgba(#000,1));
+		
 	}
 
 
