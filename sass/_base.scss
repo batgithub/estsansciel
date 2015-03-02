@@ -1,9 +1,9 @@
 
-$brand-color : #233667; //bleu
+$brand-color : #25305C; //bleu
 $brand-color-clair : scale-lightness($brand-color, 42); //bleu clair
 $accent-color : #F5A623; //jaune
-$noir : #151515;
-$gris-sombre : #464646;
+$noir : #2D2D2D;
+$gris-sombre : #4f4f4f;
 $gris-clair : scale-lightness($gris-sombre, 95);
 $blanc : white;
 
@@ -13,7 +13,8 @@ $rond: 25px;
 $padding-intro : 25% 0;
 
 $padding-dates : 10px;
-$padding-section : 3em 0 3em 0;
+$padding-section : 5em 0;
+$padding-section-small : 3em 0;
 $padding-section-piece : 3em 0 0 0;
 
 $line-height-header: 1em;
@@ -34,79 +35,97 @@ $opacity : 92/100;
 	@include selection($gris-sombre, scale-lightness($accent-color,46));
 }
 
-body{
-
-	background-color: $gris-clair;
-
-	font-family: 'Lato', sans-serif;
-	font-size: 1em;
-	color: $gris-sombre;
-	line-height: 2em;
-	font-weight: 300;
-
-
-}
-p {
-	font-size :1.2em;
-	color : $gris-sombre 
-}
-body,ul,li, h1,h2,h3,h4,h5,h6,br{
+body,ul,li, h1,h2,h3,h4,h5,h6,br,blockquote {
 	margin:0;
 	padding: 0;
-	
 }
 
-h1{
-	margin-bottom: 1em;
-	font-size: 3em;
+@include font-face(
+  "aleo",
+  inline-font-files(
+    'aleo/aleo-bold.woff', woff,
+    'aleo/aleo-bold.ttf', ttf,
+    'aleo/aleo-bold.svg', svg),
+  	'aleo/aleo-bold.eot',
+  bold, // font-weight
+  normal  // font-style
+);
+@include font-face(
+  "aleo-italic",
+  inline-font-files(
+    'aleo/aleo-italic.woff', woff,
+    'aleo/aleo-italic.ttf', ttf,
+    'aleo/aleo-italic.svg', svg),
+  	'aleo/aleo-italic.eot',
+  normal, // font-weight
+  italic // font-style
+);
+
+$font-primary-normal : "aleo",georgia, serif;
+$font-primary-italic : "aleo-italic";
+$font-secondary-normal : "lato",Arial, helvetica, sans-serif;
+
+body {
+	background-color: $blanc;
+
+	font-family: $font-secondary-normal;
+	font-size: 1em;
+	color: $noir;
+	line-height: 1.4em;
+	font-weight: 300;
+}
+
+p {
+	font-size :1.1em;
+	color : $noir; 
+}
+
+
+h2{
+	margin-bottom: 2em;
+	
+	font-family:$font-primary-normal;
+	font-weight: bold;
+	font-size: 2.5em;
 	line-height: 1.2;
-	font-weight: 400;
+	color: $brand-color;
 	text-align: center;
+
 	&::after {
 		position : relative;
 		display: block;
 		left : 50%;
 		margin: 20px 0 0 -100px;
 
-		height: 2px;
+		height: 4px;
+		background : $brand-color;
 		width: 200px;
 		content:"";
 	}
-	
-
-}
-.titre-clair { 
-	color: $blanc;
-	&::after {
-		background-color:$blanc;		
-	}
-
-}
-.titre-sombre {	
-	color: $brand-color;
-	&::after {
-		background-color:$brand-color;
-	}
 }
 
 
-h2{
-	margin-bottom: 0.8em;
-	color: $gris-sombre;
-	font-size: 2em;
+h3{
+	margin-bottom: 1em;
+	font-family: $font-primary-normal;
+	font-weight: bold;
+	color: $accent-color;
+	font-size: 1.5em;
 	line-height: 1.2;
-	font-weight: 300;
+
 }
 
 a{
 	text-decoration: none;
+	color: $noir;
+	transition-duration:$default-transition-duration;
  	&:hover {
-		color: $accent-color !important;
+		color: $accent-color ;
 	}
 
 }
 a.dark-link {
-	color: $gris-sombre !important;
+	color: $noir !important;
 	transition-duration:$default-transition-duration;
 		&:hover {
 			color: $noir !important;
@@ -129,16 +148,10 @@ section{
 	visibility: hidden;
 }
 
-@media screen and (max-width: 768px) {
-	h1 {
-		font-size: 2.5em !important;
-	}
-	h2 {
-		font-size: 1.5em !important;
-	}
+
+.infos {
+	text-align: center;
 }
-
-
 /*------------------------------------*\
     $Formulaire
 \*------------------------------------*/
@@ -211,23 +224,25 @@ textarea {
 
 	}
 }
-
+$color-base :lighten($accent-color, 5);
+$color-hover : $accent-color;
 .btn-light {
-	$blanc-casse:darken($blanc, 20);
+	
+	
 	margin-top: 10px;
-	padding:5px 10px;
+	padding: 5px 10px;
 
-	border: 1px solid $blanc-casse;
+	border: 1px solid $color-base;
 	@include border-radius(5px);
 	
 	font-size: 1em;
-	color: $blanc-casse;
+	color: $color-base;
 
 	@include transition-duration($default-transition-duration);
 
 	&:hover {
-		border: 1px solid $blanc;
-		color: $blanc !important;	
+		border: 1px solid $color-hover;
+		color: $color-hover !important;	
 
 		@include transition-duration($default-transition-duration);	
 	}
