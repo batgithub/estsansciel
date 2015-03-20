@@ -26,17 +26,13 @@
     <body>
         <div class="site-container">
             <div class="site-pusher">
-                 <!--
-                            introduction : logo
-                                    -->
-                <a name="intro"></a>
-                <section class="intro" >
+                <header class="intro" >
                     <div class="intro-wrap row">
                         <div class="img-wrap  small-centered  columns">
                             <h1><a href="index.html"><img src="img/logo1.png" alt="Logo Compagnie Est Sans Ciel"></a></h1>
                         </div>
                     </div>
-                </section>
+                </header>
 
                 <div class="site-content">
                     <!--
@@ -66,10 +62,12 @@
                     <section class="video">
                         <div class="video row">
                             <div class="small-12 medium-10 large-8 small-centered  columns">
-                                <div class="videoWrapper">
-                                    <img src="img/video.png" alt="">
-                                    <!-- <iframe src="http://www.youtube.com/embed/gCZEd2leJc4?theme=light&color=grey&color2=grey" frameborder="0" allowfullscreen ></iframe> -->
-                                <i class="fa fa-play"></i>
+                                <div class="videoWrapper" id="videoWrapper">
+                                    
+                                    <iframe src="http://www.youtube.com/embed/gCZEd2leJc4?theme=light&color=grey&color2=grey&showinfo=0&modestbranding=1" frameborder="0" allowfullscreen id="video" class="hidden"></iframe>
+                                    <img src="img/video.png" id="image"alt="">
+                                    <i class="fa fa-play" id="play"></i>
+                                
                                 </div>
                             </div>
                             <div class="small-12  columns">
@@ -93,22 +91,23 @@
 
                         <div class="creations-content row">
                             <div class="small-12 columns creations-carousel">
+                                <div href="piece1.html"class="row creation-carousel-item">
+                                    <img src="img/affiche/EtesVousChezVous.jpg"  alt="la cabane en coussin" class="affiche small-12 medium-5 medium-push-1 columns"> 
+                                    <div  class="small-12 medium-5 columns">
+                                        <h3>Êtes-vous chez vous ?</h3>
+                                        <p>Un spectacle se prépare à Versepolis, sombre ville où jazz, poésie et mensonge se retrouvent accoudés au comptoir. Dans ce cabaret, personne n’est celui qu’il paraît être, et faire chanter l’autre est le meilleur des talents. Espérant faire tomber les masques avant la levée du rideau, Ivy Adams, jeune reporter ambitieuse, trouve sa place au milieu de cette mascarade.</p> <p>Se mêlent alors au son de la musique, une chanteuse ambitieuse, un talentueux pianiste, un gouverneur bien trop honnête, un agent peu scrupuleux, sa femme frivole, et l’amant de cette dernière. Ajoutez à cela la venue d’un label pour lequel chacun se doit d’être aux petits soins, et le tableau est complet !</p>
+                                    </div>
+                                </div>
+                                 <div href="piece1.html"class="row creation-carousel-item">
+                                    <img src="img/affiche/coussins.jpg"  alt="la cabane en coussin" class="affiche small-12 medium-5 medium-push-1 columns"> 
+                                    <div  class="small-12 medium-5 columns">
+                                        <h3>Êtes-vous chez vous ?</h3>
+                                        <p>Tom et Vanessa sont adultes et responsables. Mais un beau jour, au lieu de partir travailler, le couple décide de retomber en enfance.</p><p>
+Entre mondes imaginaires, cauchemars, fantaisies, cette pièce porte un message de légèreté et de bonne humeur. Une histoire aux personnages colorés, qui entraîne les spectateurs dans un monde qu'ils reconnaissent et retrouvent avec nostalgie.</p>
+                                    </div>
+                                </div>
+
                                 
-                                <div href="piece1.html"class="creation-carousel-item">
-                                    <img src="img/affiche/EtesVousChezVous.jpg"  alt="la cabane en coussin" class="affiche"> 
-                                </div>
-                                <div href="piece1.html"class="creation-carousel-item">
-                                    <img src="img/affiche/Garmoutias.jpg"  alt="la cabane en coussin" class="affiche">
-                                </div>
-                                <div href="piece1.html"class="creation-carousel-item">
-                                    <img src="img/affiche/souliersDores.jpg"  alt="la cabane en coussin" class="affiche">
-                                </div>
-                                <div href="piece1.html"class="creation-carousel-item">
-                                    <img src="img/affiche/ViceAVersepolis.jpg"  alt="la cabane en coussin" class="affiche">
-                                </div>
-                                <div href="piece1.html"class="creation-carousel-item">
-                                    <img src="img/affiche/coussins.jpg"  alt="la cabane en coussin" class="affiche">
-                                </div>
                             </div> <!-- creations-carousel -->
                             <div class="small-12  columns">
                                 <p class="infos">Nos pièces pièces sont des créations originales.</p>
@@ -162,7 +161,7 @@
                                     </tr>
                                    
                                     <tr>
-                                        <td class="ajouter small-12 columns">+ Ajouter une date ?</td>
+                                        <td class="ajouter small-12 columns"><a href="mailto:estsansciel@gmail.com?subject=Proposition de date">+ Ajouter une date ?</a></td>
                                     </tr>
                                 </tbody>
                             </table>

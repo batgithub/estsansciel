@@ -1,9 +1,11 @@
+.site-container, .site-pusher, .intro {
+	height:100%;
+}
 .intro{
 	// @include background-image(radial-gradient(center, cover, $brand-color-clair, $brand-color));
 	display: table;
 	width: 100%;
-	height: 100%;
-	padding:25% 0 !important;
+	
 	background :url(../img/bgd.jpg) center top ;
   	@include background-size (cover);
 	
