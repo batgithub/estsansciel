@@ -1,0 +1,49 @@
+.contact{
+	background :url(../img/chair-blue.jpg) top ;
+ 	@include background-size (cover);
+	text-align: center;
+	
+	a {
+		font-size: 1.2em !important;
+		color : $blanc;	
+		font-family: $font-primary-normal;
+		font-style: bold;
+		text-transform: uppercase;
+		&:hover {
+			color: $accent-color;
+		}
+	}
+	
+	i {
+		margin-right: 10px;
+	}
+	
+	.social-link {
+		margin : 1em 0;
+		letter-spacing: 1px;
+	}
+	.facebook {
+		text-align: right;
+	}
+	.youtube {
+		text-align: left;
+	}
+			
+				
+	
+}
+
+@media screen and (max-width: 40em) {
+		.contact {
+			background :url(../img/chair-blue-small.jpg) top ;
+			@include background-size (cover);
+
+			.facebook {
+				text-align: center;
+			}
+			.youtube {
+				text-align: center;
+			}
+		}
+		
+	}

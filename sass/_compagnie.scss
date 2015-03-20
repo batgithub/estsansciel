@@ -1,25 +1,57 @@
 .compagnie{
-	padding-top: 4em !important;
-	z-index: 3;
-	.present{
-		text-align: center;
-		padding-bottom: 2em;
-	}
-	.present-generale{
-		margin-bottom: $gutter !important;
+	
+}
+
+.compagnie-summary {
+	text-align: right;
+}
+
+@media screen and (max-width: 40em) {
+	.compagnie-summary {
+		text-align: left;
 	}
 }
-.video {
-	
-	padding-right: -1em !important;
+
+
+
+.video {	
+	background-color:scale-lightness($accent-color, 25);
 	
 	.videoWrapper {
-		margin-bottom: $gutter;
 		position: relative;
 		padding-top: 25px;
 		padding-bottom: 56.25%; /* 16:9 */
 		height: 0;
 	}
+
+	$play-taille: 50px;	
+	$play-taille-hover : 60px;
+	i{	
+		position:absolute;
+		cursor: pointer;
+		left: 50%;
+		top: 50%;
+		margin: $play-taille/-2 0 0 $play-taille/-2;
+		background-color: $blanc;
+		font-size: 30px;
+		text-align: center;
+		padding: 10px 0 0 7px;
+		color:$accent-color;
+		height: $play-taille;
+		width: $play-taille;
+		@include border-radius($play-taille/2);
+		@include transition ($default-transition-duration);
+		&:hover {
+			@include box-shadow($gris-sombre 2px 2px 100px);
+			height: $play-taille-hover;
+			width: $play-taille-hover;
+			margin: $play-taille-hover/-2 0 0 $play-taille-hover/-2;
+			@include border-radius($play-taille-hover/2);
+			padding: 12px 0 0 7px;
+			font-size: 35px;
+		}
+	}
+
 	.videoWrapper iframe {
 		position: absolute;
 		top: 0;

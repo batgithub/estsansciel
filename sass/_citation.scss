@@ -1,0 +1,27 @@
+.citation {
+	background :url(../img/ciel.jpg) center;
+	// background : $brand-color;
+ 	@include background-size (cover);
+	font-family: $font-primary-normal;
+	font-weight: bold;
+	color: $blanc;
+	letter-spacing: 1px;
+	font-size: 1.5em;
+	line-height: 1.4em;
+	@include single-text-shadow($noir, 1px, 3px, 7px);
+
+	p{
+		font-family: $font-primary-italic;
+		font-style: italic;
+		color: $blanc;
+		font-size: 0.6em;
+		text-align: right;
+	}
+}
+
+
+@media screen and (max-width: 40em) {
+	.citation {
+		background :url(../img/ciel-small.jpg) center;
+	}
+}

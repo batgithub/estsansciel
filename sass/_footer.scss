@@ -1,44 +1,31 @@
 footer {
-	background-color: $accent-color;
+	border-top: 3px solid $accent-color;
+	font-size:1em;
 	.copyright {
-		text-align: right;
-		p{color:$noir; font-size:1em;}
+		text-align: right;	
+	}	
+	span {
+		color: $accent-color;
 	}
-	.liens {
-		padding-top: 1.3em;
-		
-	}
-	
 }
 
-@media screen and (max-width: 960px) {
-	footer {
-		padding:  1em 0 !important;
-		.liens {
-			text-align: left;
-			padding-top: 0.3em;
-			
-		}
-		.copyright {
-			p {
-				margin: 0 !important;
-				padding: 0.3em 0 !important;
-			}
-		}
+@media screen and (max-width: 960px) {	
+	.liens {
+		text-align: left;
 	}
+	
 	
 
 }
 @media screen and (max-width: 640px) { 
+	
 	footer {
-		.liens {
-			text-align: center;
-			
-			
-		}
-		.copyright {
-			text-align: center;
+		padding: 0.5em 0;
+
+		p {
+			margin:  0 !important;
+			text-align: center !important;
 		}
 	}
-
+	
 }
