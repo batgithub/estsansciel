@@ -4,14 +4,15 @@
 
 .compagnie-summary {
 	text-align: right;
+	padding-top: 2em;
 }
 
 @media screen and (max-width: 40em) {
 	.compagnie-summary {
 		text-align: left;
+		padding-top: 0;
 	}
 }
-
 
 
 .video {	
@@ -20,7 +21,7 @@
 	.videoWrapper {
 		position: relative;
 		padding-top: 25px;
-		padding-bottom: 56.25%; /* 16:9 */
+		padding-bottom: 52%; /* 16:9 */
 		height: 0;
 	}
 
