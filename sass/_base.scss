@@ -30,6 +30,8 @@ $header-transition-duration : 500ms;
 
 $opacity : 92/100;
 
+$radius-default:3px;
+
 * {
 	@include box-sizing(border-box);
 	@include selection($gris-sombre, scale-lightness($accent-color,46));
@@ -90,19 +92,35 @@ h2{
 	line-height: 1.2;
 	color: $brand-color;
 	text-align: center;
-
+	
+	
 	&::after {
+		
 		position : relative;
 		display: block;
 		left : 50%;
-		margin: 20px 0 0 -100px;
-
+		margin: 20px 0 0 0px;
+		width: 0px;
 		height: 4px;
-		background : $brand-color;
-		width: 200px;
+		
 		content:"";
-	}
+		background-color:$brand-color;
+
+		@include transition(width 0.5s, margin 0.5s, opacity 0.1s, delay 1s );
+		@include transition-delay(0.3s);
+		@include opacity(0);
+
+	}	
 }
+
+.underline::after {
+	width: 200px;
+	margin: 20px 0 0 -100px;
+	@include opacity(1);
+		
+}	 
+
+
 
 
 h3{

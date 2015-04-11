@@ -87,11 +87,11 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 3px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 3px;
     left: auto;
 }
 .slick-prev:before
@@ -105,12 +105,12 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 3px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: 3px;
 }
 .slick-next:before
 {
@@ -122,15 +122,10 @@
 }
 
 /* Dots */
-.slick-slider
-{
-    margin-bottom: 30px;
-}
 
 .slick-dots
 {
     position: absolute;
-    bottom: -45px;
 
     display: block;
 
@@ -141,6 +136,7 @@
 
     text-align: center;
 }
+
 .slick-dots li
 {
     position: relative;

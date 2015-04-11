@@ -1,5 +1,15 @@
 .creation-carousel-item {
-	margin: 0 4px 0 4px;
 	
-	overflow: hidden;	
+	padding: 25px 10px 25px 10px;
+
+}
+.creation-content-wrap {
+	background: $gris-clair;
+	@include border-radius($radius-default);
+	ul {
+		margin-left: 0px;
+	}
+}
+.piece-text {
+	margin-top:2em;
 }
