@@ -5,13 +5,14 @@ $(document).ready(function(){
     });
 });
 
-
-jQuery("#play").on('click',function(){
-    var vi = jQuery("#video");
-    vi.attr("src", vi.data("autoplay-src") );
-});
-
-$(window).bind('load scroll', underline($('#who')));
+$('#play').on('click', function(ev) {
+    $('#video').removeClass("hidden");
+    $('#play').addClass("hidden");
+    $('#image').addClass("hidden");
+    $("#video")[0].src += "&autoplay=1";
+    ev.preventDefault();
+ 
+  });
 
 
 function underline(element)
