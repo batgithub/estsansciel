@@ -1,11 +1,6 @@
 @media screen and (max-width: 768px) {
 	h2 {
 		font-size: 2em !important;
-		&::after {
-			width: 150px;
-			height: 3px;
-			margin: 20px 0 0 -75px;
-		}
 	}
 	section {
 		padding : $padding-section-small ;
@@ -13,5 +8,12 @@
 
 	p{
 		font-size: 0.9em;
+	}
+
+	.underline::after {
+		width: 125px;
+		margin: 20px 0 0 -62.5px;
+		
+		
 	}
 }

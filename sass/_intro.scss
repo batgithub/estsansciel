@@ -1,13 +1,15 @@
 .site-container, .site-pusher, .intro {
-	height:100%;
+	height:96%;
 }
+
 .intro{
 	// @include background-image(radial-gradient(center, cover, $brand-color-clair, $brand-color));
 	display: table;
 	width: 100%;
 	
-	background :url(../img/bgd.jpg) center top ;
+	background :url(../img/bgd.jpg) center center;
   	@include background-size (cover);
+  	@include animation('scale-photo-bg 12s ease-in-out infinite alternate');
 	
 
 	.intro-wrap {
@@ -16,6 +18,16 @@
 		.img-wrap{width: 200px;}
 	}
 }
+
+@include keyframes(scale-photo-bg){
+	0% {
+		@include transform (scale(1.0));
+	}
+    100% {
+        @include transform (scale(1.1));
+    }
+}
+
 .intro-creation {
 	@extend .intro;
 	background :url(../img/ESC-photo2.jpg) center top ;

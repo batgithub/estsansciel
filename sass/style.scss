@@ -3,11 +3,20 @@
 /*------------------------------------*\
     foundation
 \*------------------------------------*/
-// @import "foundation/_functions.scss";
-// @import "foundation/_settings.scss";
-// @import "foundation/_global.scss";
-// @import "foundation/_grid.scss";
+@import "foundation/_functions.scss";
+@import "foundation/_settings.scss";
+@import "foundation/_global.scss";
+@import "foundation/_grid.scss";
 
+
+/*------------------------------------*\
+    mixins
+\*------------------------------------*/
+
+@import "mixins/_keyframes.scss";
+@import "mixins/_animations.scss";
+@import "mixins/_transform.scss";
+@import "mixins/_translate.scss";
 /*------------------------------------*\
     $perso
 \*------------------------------------*/
@@ -24,4 +33,6 @@
 @import "_footer.scss";
 @import "_modal.scss";
 @import "_presentPiece.scss";
+
+
 

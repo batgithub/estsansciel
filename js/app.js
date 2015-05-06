@@ -21,17 +21,17 @@ $window.on('scroll', revealOnScroll);
 
 function revealOnScroll() {
     var scrolled = $window.scrollTop();
-    $(".revealOnScroll:not(.underline)").each(function () {
+    $(".revealOnScroll:not(.animated)").each(function () {
         var $this     = $(this),
         offsetTop = $this.offset().top;
 
         if (scrolled + win_height_padded > offsetTop) {
             if ($this.data('timeout')) {
                 window.setTimeout(function(){
-                    $this.addClass('underline ' + $this.data('animation'));
+                    $this.addClass('animated ' + $this.data('animation'));
                 }, parseInt($this.data('timeout'),10));
             } else {
-            $this.addClass('underline ' + $this.data('animation'));   
+            $this.addClass('animated ' + $this.data('animation'));   
             }
         }
     });

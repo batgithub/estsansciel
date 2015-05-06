@@ -1,5 +1,17 @@
 footer {
-	border-top: 3px solid $accent-color;
+
+	&::before {
+		position : relative;
+		display: block;
+		content: "";
+		width: 0%;
+		background: $accent-color;
+		height: 3px;
+		top:0;
+		left: 0;
+		@include opacity(0);
+	}
+	// border-top: 3px solid $accent-color;
 	font-size:1em;
 	.copyright {
 		text-align: right;	
@@ -9,9 +21,15 @@ footer {
 	}
 }
 
+.line::before {
+	width:100%;
+	@include opacity(1);
+}
+
 @media screen and (max-width: 960px) {	
 	.liens {
 		text-align: left;
+
 	}
 	
 	
